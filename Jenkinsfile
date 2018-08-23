@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'docker' && 'Windows7'
+            label 'master'
         }
     }
     stages { 	
