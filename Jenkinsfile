@@ -1,13 +1,13 @@
 pipeline {
     agent {
         node {
-            label 'master'
+            label 'Win7'
         }
     }
     stages { 	
         stage('Build Jar') {
             steps {
-                sh 'package -DskipTests'
+                bat 'package -DskipTests'
             }
         }
         stage('Build Image') {
